@@ -28,7 +28,7 @@ namespace Lab3_Simple_v2
                 mainCollection[1].Info = "Change";
                 mainCollection[1].Freq = 50;
 
-                mainCollection.Remove("Change",1);
+                mainCollection.Remove("Change",50);
 
                 Console.WriteLine(mainCollection.ToString());
             }

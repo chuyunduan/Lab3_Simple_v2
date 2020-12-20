@@ -94,14 +94,14 @@ namespace Lab3_Simple_v2
             v2Datas = new List<V2Data>();
             V2DataOnGrid[] mag = new V2DataOnGrid[4];
             V2DataCollection[] collections = new V2DataCollection[4];
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
             {
                 //mag[i] = new V2DataOnGrid("Data", 123, Ox, Oy);
                 //collections[i] = new V2DataCollection("Data", 123);
                 mag[i] = new V2DataOnGrid("Data " + i.ToString(), i, Ox, Oy);
                 collections[i] = new V2DataCollection("Collection number: " + i.ToString(), i);
             }
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
             {
                 mag[i].initRandom(0, 10);
                 collections[i].initRandom(4, 10, 10, 0, 100);
